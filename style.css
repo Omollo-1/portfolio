@@ -28,6 +28,52 @@ body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica
 .project-body{flex:1}
 .meta{font-size:.9rem; opacity:.85; margin-top:8px}
 
+.about-content, .work-content {
+    padding: 10px;
+}
+
+.about-content ul, .work-content ul {
+    margin: 15px 0;
+    padding-left: 20px;
+}
+
+.about-content li, .work-content li {
+    margin: 8px 0;
+    color: var(--dark);
+}
+
+.work-item {
+    margin-bottom: 25px;
+}
+
+.work-date {
+    color: var(--dark);
+    opacity: 0.8;
+    font-style: italic;
+    margin: 5px 0;
+}
+
+.contact-info {
+    margin: 20px 0;
+    padding: 15px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 6px;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+.contact-info a {
+    color: var(--dark);
+    text-decoration: underline;
+    opacity: 0.9;
+}
+
+.contact-info a:hover {
+    opacity: 1;
+}
+
 .sidebar{width:320px; background:#e9e9e9; padding:20px; border-radius:6px}
 .aside-title{margin-top:0}
 .aside-box{background:#f3f3f3; padding:12px; margin-bottom:14px; border-radius:4px}

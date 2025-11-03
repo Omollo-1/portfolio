@@ -31,6 +31,46 @@
         <main class="wrap site-main">
             <article class="content" aria-labelledby="projects-heading">
                 <h2 id="projects-heading" class="section-title">Projects</h2>
+                <section id="about" class="card">
+                    <div class="about-content">
+                        <h2>About Me</h2>
+                        <p>I'm a geospatial developer and digital strategist passionate about using GIS and programming to solve real-world challenges. 
+                           With advanced skills in Python and spatial analysis, I build intelligent systems that turn location data into actionable insights — from mapping urban growth to predicting flood zones.</p>
+                        <p>My expertise includes:</p>
+                        <ul>
+                            <li>GIS Development & Spatial Analysis</li>
+                            <li>Python Programming & Data Science</li>
+                            <li>Web Development (HTML, CSS, JavaScript)</li>
+                            <li>Machine Learning & AI Applications</li>
+                            <li>Remote Sensing & Satellite Imagery Analysis</li>
+                        </ul>
+                        <p>Currently working on innovative projects that combine GIS technology with artificial intelligence to create smarter, more sustainable urban solutions.</p>
+                    </div>
+                </section>
+
+                <section id="work" class="card">
+                    <div class="work-content">
+                        <h2>Work Experience</h2>
+                        <div class="work-item">
+                            <h3>GIS Developer - Urban Planning Department</h3>
+                            <p class="work-date">2024 - Present</p>
+                            <ul>
+                                <li>Lead development of spatial analysis tools for urban planning</li>
+                                <li>Implement machine learning models for land use prediction</li>
+                                <li>Manage and analyze large-scale geographic datasets</li>
+                            </ul>
+                        </div>
+                        <div class="work-item">
+                            <h3>Geospatial Analyst - Environmental Research Institute</h3>
+                            <p class="work-date">2022 - 2024</p>
+                            <ul>
+                                <li>Conducted environmental impact assessments using GIS</li>
+                                <li>Developed automated workflows for satellite image processing</li>
+                                <li>Created interactive web maps for public engagement</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
 
                 <section class="card project-card">
                     <img src="py.jpeg" alt="Screenshot of Portfolio Website" class="project-thumb">
@@ -65,7 +105,14 @@
                 <h2 id="contact-heading" class="aside-title">Contact</h2>
 
                 <form class="contact-form" action="mailto:geraldomollo942@gmail.com" method="post" enctype="text/plain" aria-describedby="contact-help">
-                    <p id="contact-help" class="sr-only">The form will open your email client to send a message. If that doesn't work, email gerald@example.com directly.</p>
+                    <p id="contact-help" class="sr-only">Feel free to reach out for collaborations or questions about my work in GIS and development.</p>
+
+                    <div class="contact-info">
+                        <p><strong>Email:</strong> geraldomollo942@gmail.com</p>
+                        <p><strong>Location:</strong> Kisumu, Kenya</p>
+                        <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/gerald-omollo" target="_blank">gerald-omollo</a></p>
+                        <p><strong>GitHub:</strong> <a href="https://github.com/Omollo-1" target="_blank">Omollo-1</a></p>
+                    </div>
 
                     <label for="name">Name</label>
                     <input id="name" name="name" type="text" required>
@@ -74,12 +121,10 @@
                     <input id="email" name="email" type="email" required>
 
                     <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <textarea id="message" name="message" rows="5" placeholder="Let me know how I can help with your GIS or development needs..." required></textarea>
 
                     <button type="submit" class="btn">Send message</button>
                 </form>
-
-                
             </aside>
         </main>
 
