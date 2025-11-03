@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Gerald's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header class="site-header">
+        <div class="wrap">
+            <h1 class="logo">gerald's portfolio</h1>
+            <p class="tag">front-end developer</p>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <div class="wrap nav-inner">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+        <main class="wrap site-main">
+            <article class="content" aria-labelledby="projects-heading">
+                <h2 id="projects-heading" class="section-title">Projects</h2>
+
+                <section class="card project-card">
+                    <img src="py.jpeg" alt="Screenshot of Portfolio Website" class="project-thumb">
+                    <div class="project-body">
+                        <h3>Portfolio Website</h3>
+                        <p>A personal portfolio website to showcase projects and skills. Built with semantic HTML, responsive CSS and minimal JavaScript.</p>
+                        <p class="meta">Tools: HTML, CSS, JS</p>
+                    </div>
+                </section>
+
+                <section class="card project-card">
+                    <img src="gs.jpeg" alt="Map and data visualization from GeoAI project" class="project-thumb">
+                    <div class="project-body">
+                        <h3>GeoAI</h3>
+                        <p>An experimental GeoAI project combining satellite imagery, GIS and ML to extract insights for urban planning and agriculture.</p>
+                        <p class="meta">Tools: Python, TensorFlow, GIS</p>
+                    </div>
+                </section>
+
+                <section class="card project-card">
+                    <img src="GIS.jpeg" alt="Responsive app layout" class="project-thumb">
+                    <div class="project-body">
+                        <h3>Soko Moja</h3>
+                        <p>A mobile-first marketplace platform that empowers local vendors with simple e-commerce tools and data insights.</p>
+                        <p class="meta">Tools: JS, PWA, Accessibility</p>
+                    </div>
+                </section>
+            </article>
+
+            <aside class="sidebar" role="complementary" aria-labelledby="contact-heading">
+                <img src="Screenshot_20250429-152528_WhatsApp.jpg" alt="Gerald Omollo portrait" class="profile-img">
+                <h2 id="contact-heading" class="aside-title">Contact</h2>
+
+                <form class="contact-form" action="mailto:geraldomollo942@gmail.com" method="post" enctype="text/plain" aria-describedby="contact-help">
+                    <p id="contact-help" class="sr-only">The form will open your email client to send a message. If that doesn't work, email gerald@example.com directly.</p>
+
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" required>
+
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit" class="btn">Send message</button>
+                </form>
+
+                
+            </aside>
+        </main>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <p>©2025 <span id="year"></span> Gerald — All rights reserved</p>
+        </div>
+    </footer>
+
+   
+</body>
+</html>
+
+  
+ 

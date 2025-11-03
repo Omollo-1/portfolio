@@ -1,0 +1,235 @@
+:root{
+    --peach:#c92020;
+    --coral:#661111;
+    --blue:#2f2f2f;
+    --light-blue:#3f3f3f;
+    --muted:#2a2a2a;
+    --dark:#ffffff;
+    --wrap:1100px;
+}
+
+*{box-sizing:border-box}
+body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; color:var(--dark); background:#000000}
+.wrap{max-width:var(--wrap); margin:0 auto; padding:0 20px}
+
+.site-header{background:var(--peach); padding:32px 0}
+.site-header .logo{font-size:28px; margin:0}
+.site-header .tag{margin:6px 0 0; opacity:.9}
+
+.main-nav{background:var(--coral); padding:14px 0}
+.nav-inner ul{list-style:none; margin:0; padding:0; display:flex; gap:18px}
+.nav-inner a{color:var(--dark); text-decoration:none; padding:8px 18px; display:inline-block; background:rgba(255,255,255,.15); border-radius:4px}
+
+.site-main{display:flex; gap:28px; padding:30px 0}
+.content{flex:1; background:var(--blue); padding:24px; border-radius:6px}
+.section-title{color:var(--dark); margin-top:0}
+.card{background:var(--light-blue); padding:18px; border-radius:6px; margin:12px 0; display:flex; gap:16px; align-items:center}
+.project-thumb{width:120px; height:80px; object-fit:cover; border-radius:6px; flex-shrink:0}
+.project-body{flex:1}
+.meta{font-size:.9rem; opacity:.85; margin-top:8px}
+
+.sidebar{width:320px; background:#e9e9e9; padding:20px; border-radius:6px}
+.aside-title{margin-top:0}
+.aside-box{background:#f3f3f3; padding:12px; margin-bottom:14px; border-radius:4px}
+
+/* profile image to the right, inside sidebar */
+.profile-img{width:100%; height:auto; border-radius:6px; display:block; margin-bottom:14px}
+
+.contact-form{display:flex; flex-direction:column; gap:10px}
+.contact-form label{font-weight:600}
+.contact-form input,.contact-form textarea{padding:8px;border:1px solid #d0d0d0;border-radius:6px}
+.btn{background:var(--coral); color:var(--dark); border:none; padding:10px 14px; border-radius:6px; cursor:pointer}
+.btn:focus,.nav-inner a:focus{outline:3px solid rgba(0,0,0,0.12); outline-offset:2px}
+
+.sr-only{position:absolute !important; left:-10000px; top:auto; width:1px; height:1px; overflow:hidden}
+
+.site-footer{background:var(--peach); padding:28px 0; margin-top:22px}
+
+/* Responsive stack */
+@media(max-width:880px){
+    .site-main{flex-direction:column}
+    .sidebar{width:auto}
+    .nav-inner ul{justify-content:center}
+}
+
+/* small, aesthetic tweaks */
+h1,h2,h3{font-weight:600}
+p{line-height:1.5}
+header{
+    background-color:gainsboro;
+    padding: 20px;
+    text-align: center;
+}
+h1{
+    color: darkblue;
+    font-family: 'Arial', sans-serif;
+
+
+}
+p{
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333333;
+    font-weight: bold;
+
+}
+nav{
+    margin-top: 10px;
+
+
+}
+nav a{
+    margin-right: 15px;
+    text-decoration: none;
+    color: darkblue;
+
+}
+nav a:hover{
+    text-decoration: underline;
+}
+body{
+    font-family: 'Helvetica', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+
+
+
+}
+
+section{
+    margin: 20px;
+    padding: 8px;
+    max-width: 800px;
+    padding:40px 20px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    background-color: #f9f9f9;
+
+
+}
+h2{
+    color: darkblue;
+    font-family: 'Verdana', sans-serif;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+
+
+}
+label{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+
+
+}
+input, textarea{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+
+}
+input[type="submit"]{
+    margin-top: 15px;
+    background-color: darkblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+
+}
+input[type="submit"]:hover{
+    background-color: navy;
+
+}
+
+.project-card{
+    border: 1px solid #ddd;
+    display: flex;
+    gap: 20px;
+    padding: 40px;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    background-color: #fff;
+    border-left: 5px solid darkblue;
+    position: center;
+
+}
+.project-card h3{
+    margin-top: 0;
+    color: darkgreen;
+    margin: 0;
+    position: center;
+
+
+}
+.project-card a{
+    display: inline-block;
+    margin-top: 10px;
+    color: darkblue;
+    text-decoration: none;
+    padding: 30px;
+
+}
+.project-card a:hover{
+    text-decoration: underline;
+
+}
+img{
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+
+}
+.GeoAI Project{
+    border: 8px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #fff;
+
+}
+.GeoAI Project h3{
+    margin-top: 0;
+    color: darkgreen;
+
+}
+.GeoAI Project a{
+    display: block;
+    margin-top: 10px;
+    color: darkblue;
+    text-decoration: none;
+
+
+}
+.GeoAI Project a:hover{
+    text-decoration: underline;
+
+}
+img{
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+    position: center;
+    background-color: #eafbe7;
+    border-radius: 8px;
+    
+}
+footer {
+  position: relative;
+  text-align: center;
+  padding: 20px;
+  background-color: darkturquoise;
+  color: white;
+}
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
