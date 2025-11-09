@@ -5,14 +5,25 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Gerald's Portfolio</title>
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        // Check if user is logged in
+        if (localStorage.getItem('isLoggedIn') !== 'true') {
+            window.location.href = 'login.html';
+        }
+        
+        function logout() {
+            localStorage.removeItem('isLoggedIn');
+            window.location.href = 'login.html';
+        }
+    </script>
 </head>
 <body>
     <header class="site-header">
 
         <div class="wrap">
             <h1 class="logo">GERALD OMOLLO</h1>
-            <p class="tag">Front-End Developer</p>
+            <p class="tag">Geospatialist</p>
         </div>
     </header>
 
@@ -24,7 +35,22 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#work">Work</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><button onclick="logout()" class="logout-btn">Logout</button></li>
             </ul>
+            <div class="social-icons header-social">
+                <a href="https://facebook.com/gerald.omollo" target="_blank" class="social-icon">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://twitter.com/omollo" target="_blank" class="social-icon">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://linkedin.com/in/gerald-omollo" target="_blank" class="social-icon">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/Omollo-1" target="_blank" class="social-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
         </div>
     </nav>
 
@@ -34,17 +60,17 @@
                 <section id="about" class="card">
                     <div class="about-content">
                         <h2>About Me</h2>
-                        <p>I'm a geospatial developer and digital strategist passionate about using GIS and programming to solve real-world challenges. 
-                           With advanced skills in Python and spatial analysis, I build intelligent systems that turn location data into actionable insights — from mapping urban growth to predicting flood zones.</p>
-                        <p>My expertise includes:</p>
+                        <p>As a passionate Geospatial Developer and GIS Specialist, I bridge the gap between spatial data and innovative technology solutions. With a strong foundation in both traditional GIS methods and modern web development, I create intelligent systems that transform complex geographical data into actionable insights.</p>
+                        <p>Core Competencies:</p>
                         <ul>
-                            <li>GIS Development & Spatial Analysis</li>
-                            <li>Python Programming & Data Science</li>
-                            <li>Web Development (HTML, CSS, JavaScript)</li>
-                            <li>Machine Learning & AI Applications</li>
-                            <li>Remote Sensing & Satellite Imagery Analysis</li>
+                            <li>Advanced GIS Development & Spatial Analysis</li>
+                            <li>Full Stack Web Development (React, Node.js, Python)</li>
+                            <li>Machine Learning for Geospatial Applications</li>
+                            <li>Remote Sensing & Environmental Modeling</li>
+                            <li>Database Management (PostgreSQL/PostGIS)</li>
+                            <li>Cloud Infrastructure (AWS, Azure)</li>
                         </ul>
-                        <p>Currently working on innovative projects that combine GIS technology with artificial intelligence to create smarter, more sustainable urban solutions.</p>
+                        <p>I'm currently focused on developing sustainable urban planning solutions using AI and GIS technologies, with a particular emphasis on environmental conservation and smart city initiatives in East Africa.</p>
                     </div>
                 </section>
 
@@ -109,8 +135,8 @@
 
                     <div class="contact-info">
                         <p><strong>Email:</strong> geraldomollo942@gmail.com</p>
-                        <p><strong>Location:</strong> Kisumu, Kenya</p>
-                        <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/gerald-omollo" target="_blank">gerald-omollo</a></p>
+                        <p><strong>Location:</strong> Nyeri, Kenya</p>
+                        <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/gerald omollo" target="_blank">gerald-omollo</a></p>
                         <p><strong>GitHub:</strong> <a href="https://github.com/Omollo-1" target="_blank">Omollo-1</a></p>
                     </div>
 
@@ -129,8 +155,33 @@
         </main>
 
     <footer class="site-footer">
-        <div class="wrap">
-            <p>©2025 <span id="year"></span> Gerald — All rights reserved</p>
+        <div class="wrap footer-content">
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="https://github.com/Omollo-1" target="_blank">GitHub</a></li>
+                    <li><a href="https://linkedin.com/in/gerald-omollo" target="_blank">LinkedIn</a></li>
+                    <li><a href="mailto:geraldomollo942@gmail.com">Email</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Address</h4>
+                <p>Nyeri, Kenya</p>
+                <p>East Africa</p>
+            </div>
+            <div class="footer-section">
+                <p class="copyright">©2025 Gerald Omollo — All rights reserved</p>
+                <p class="tagline">Geospatial Developer & GIS Specialist</p>
+            </div>
         </div>
     </footer>
 
